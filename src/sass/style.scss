@@ -1,0 +1,17 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+ 
+
+@import 'blocks/hero';
+@import 'blocks/products';
