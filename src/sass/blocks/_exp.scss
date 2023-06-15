@@ -1,0 +1,28 @@
+.exp {
+    background: #1A142C;
+    &__img {
+        display: block;
+        margin-top: 20px;
+        height: 740px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__title {
+        margin-top: 90px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 50px;
+        color: #ED584F;
+    }
+    &__descr {
+        margin-top: 30px;
+        width: 420px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+}
