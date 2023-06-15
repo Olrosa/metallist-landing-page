@@ -26,6 +26,11 @@
         background-color: white; 
         z-index: -1; 
     }
+    &__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     &__logo {
         text-decoration: none;
         display: flex;
@@ -43,6 +48,53 @@
             font-size: 22px;
             line-height: 25px;
             color: #fff;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+    }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &_tel {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color:#fff;
+        }
+        &_txt {
+            display: block;
+            padding: 5px 0px;
+            border-bottom: 1px dashed #FE8574;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #ED584F
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    &__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #fff;
+        padding: 8px;
+        img {
+            height: 100%;
+            width: 100%;
         }
     }
 }
