@@ -16,21 +16,23 @@
         color: #1A142C;
     }
     &__block {
-        margin: 75px 0 0 300px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        margin-top: 75px;
     }
     &__img {
-        position: absolute;
-        left: 0;
+        height: 600px;
+        margin-right: 45px;
+        object-fit: cover;
+        left: -343px;
         top: 200px;
-        height: 620px;
     }
     &__offer {
         width: 880px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-left: 300px;
-        margin-top: 70px;
     }
     &__item {
         margin-bottom: 50px;
@@ -57,6 +59,106 @@
             display: flex;
             align-items: center;
             color: #1A142C;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .products {
+        &__block {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .products {
+        &__offer {
+           width: 720px;
+        }
+        &__item {
+            width: 220px;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .products {
+        &__img {
+            width: 270px;
+            height: 650px;
+        }
+        &__offer {
+           width: 680px;
+        }
+        &__item {
+            width: 220px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .products {
+        &__img {
+            display: none;
+        }
+        &__subtitle {
+            width: 70%;
+        }
+        &__block {
+            max-width: 1000px;
+            padding: 0 20px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__offer {
+            width: 800px;
+        }
+        &__item {
+            margin-bottom: 50px;
+            width: 250px; 
+            gap: 20px;
+            &-title {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .products {
+        &__subtitle {
+            width: 70%;
+        }
+        &__offer {
+            width: 600px;
+        }
+        &__item {
+            margin-bottom: 50px;
+            width: 180px; 
+            gap: 20px;
+            &-title {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            width: 100%;
+        }
+        &__offer {
+            width: 100%;
+        }
+        &__item {
+            width: 95%;
+            gap: 10px;
         }
     }
 }
