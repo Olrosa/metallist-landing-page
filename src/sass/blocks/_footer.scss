@@ -1,0 +1,86 @@
+.footer {
+    padding-top: 50px;
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 50px;
+        color: #1A142C;
+    }
+    &__wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contacts {
+        width: 400px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    &__phone {
+        align-items: start;
+        &_tel {
+            color: #1A142C;
+        }
+    }
+    &__link {
+        border: 1px solid #1A142C;
+    }
+    &__info {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 35px;
+    }
+    &__item {
+        &-title {
+            display: inline;
+            color: #7B61FF;
+            border-bottom: 1px dashed #7B61FF;
+        }
+        &-descr {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #1A142C;
+        }
+    }
+    &__map {
+        width: 680px;
+        height: 534px;
+        background-color: black;
+    } 
+    &__end {
+        margin-top: 56px;
+        padding: 30px 0;
+        background-color: #1A142C;
+    }
+    &__offer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    &__logo {
+        &_name {
+            font-size: 15.8602px;
+            line-height: 18px;
+        }
+        &_img {
+            width:  27px
+        }
+    }
+}
