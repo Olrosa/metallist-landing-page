@@ -142,7 +142,12 @@
         </div> 
     </section>
     <section id="calculation" class="calculation">
-        <div class="background-image"></div>
+        <div class="background-image">
+            <div class="calculation__price">
+                <h3 class="calculation__price-title">← Получите расчет стоимости</h3>
+                <p class="calculation__price-txt">Вам позвонит инженер завода, чтобы обсудить техзадание и сообщить стоимость конструкций для проекта и возможности его удешевления</p>
+            </div>
+        </div>
         <div class="wrapper">
             <h2 class="calculation__title">Быстрый расчет</h2>
             <form action="#" class="calculation__form form">
@@ -161,12 +166,12 @@
                         <input class="form__input-input" type="text" name="length" placeholder="Например: 9м">
                     </div>
                     <div class="form__radio">
-                        <input type="radio" class="custom-radio" id="black-metal" name="fast" value="yes">
-                        <label for="black-metal">Happy</label>
-                        <input type="radio" class="custom-radio" id="steel" name="fast" value="yes">
-                        <label for="steel">Happy</label>
+                        <input type="radio" class="custom-radio" id="black-metal" name="fast" value="black-metal" checked>
+                        <label for="black-metal">Черный металл</label>
                     </div>
-                    <div class="form__radio">  
+                    <div class="form__radio"> 
+                        <input type="radio" class="custom-radio" id="steel" name="fast" value="steel">
+                        <label for="steel">Легкие стальные конструкции</label> 
                     </div>
                     <button class="button" type="submit">Получить цену</button>
                     <span class="form__politics">Нажимая кнопку, Вы соглашаетесь с <a href="#" class="form__politics-link">Положением о конфиденциальности</a> и <a href="#" class="form__politics-link">Политикой защиты данных</a></span>
