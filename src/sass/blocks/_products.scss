@@ -8,7 +8,7 @@
     }
     &__subtitle {
         margin-top: 30px;
-        width: 55%;
+        width: 65%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -63,7 +63,7 @@
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1400px) {
     .products {
         &__block {
             justify-content: center;
