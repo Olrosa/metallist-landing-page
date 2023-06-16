@@ -21,10 +21,11 @@
     margin: 0 auto;
 }
 
+@import 'blocks/forms';
+@import 'blocks/button';
 @import 'blocks/hero';
 @import 'blocks/products';
 @import 'blocks/exp';
 @import 'blocks/calculations';
-@import 'blocks/forms';
-@import 'blocks/button';
+@import 'blocks/price';
 @import 'blocks/footer';
