@@ -1,6 +1,6 @@
 .exp {
     padding: 50px 0;
-    background: #1A142C;
+    background: var(--main-dark);
     position: relative;
     .background-image {
         position: absolute;
@@ -31,7 +31,7 @@
         font-weight: 600;
         font-size: 42px;
         line-height: 50px;
-        color: #ED584F;
+        color: var(--action-red);
     }
     &__descr {
         margin-top: 30px;

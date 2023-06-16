@@ -1,11 +1,14 @@
 .footer {
     padding-top: 50px;
+    a {
+        text-decoration: none;
+    }
     &__title {
         font-style: normal;
         font-weight: 600;
         font-size: 42px;
         line-height: 50px;
-        color: #1A142C;
+        color: var(--main-dark);
     }
     &__wrapper {
         margin-top: 30px;
@@ -21,11 +24,11 @@
     &__phone {
         align-items: start;
         &_tel {
-            color: #1A142C;
+            color: var(--main-dark);
         }
     }
     &__link {
-        border: 1px solid #1A142C;
+        border: 1px solid var(--main-dark);
     }
     &__info {
         margin-top: 35px;
@@ -48,7 +51,7 @@
             line-height: 20px;
             display: flex;
             align-items: center;
-            color: #1A142C;
+            color: var(--main-dark);
         }
     }
     &__map {
@@ -59,7 +62,7 @@
     &__end {
         margin-top: 56px;
         padding: 30px 0;
-        background-color: #1A142C;
+        background-color: var(--main-dark);
     }
     &__offer {
         display: flex;
