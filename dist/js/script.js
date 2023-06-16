@@ -1,5 +1,4 @@
 window.addEventListener("DOMContentLoaded", function() { 
-
     const phoneInputs = document.querySelectorAll('.phone-input');
     phoneInputs.forEach(phoneInput => {
         phoneInput.addEventListener('focus', function(event) {
@@ -23,7 +22,22 @@ window.addEventListener("DOMContentLoaded", function() {
     
         event.target.value = formattedPhoneNumber;
         });
-    });    
+    });
+    
+    //Swiper initialization
+    new Swiper('.services__slider', {
+        slidesPerView: 2,
+        pagination: {
+            el: '.slider__points',
+            type: 'bullets', 
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>';
+            },
+            clickable: true,
+            bulletClass: 'slider__point',
+            bulletActiveClass: 'slider__point_active'
+          },
+    });
 });
 
 

@@ -11,9 +11,14 @@
     &__item {
         display: flex;
         justify-content: center;
+        &:first-child {
+            .price__name, .price__cost {
+                border-top: 1px solid rgba(0,0,0, .2);
+            }
+        }
     }
     &__name {
-        padding: 5px 20px;
+        padding: 15px 25px;
         display: inline-block;
         width: 740px;
         font-style: normal;
@@ -22,9 +27,11 @@
         line-height: 30px;
         color: var(--main-dark);
         border: 1px solid rgba(0,0,0, .2);
+        border-right: none;
+        border-top: none;
     }
     &__cost {
-        padding: 5px 20px;
+        padding: 15px 25px;
         display: inline-block;
         width: 240px;
         font-style: normal;
@@ -33,6 +40,7 @@
         line-height: 20px;
         color: var(--action-red);
         border: 1px solid rgba(0,0,0, .2);
+        border-top: none;
         span {
             margin: 0 10px;
             font-style: normal;
@@ -44,5 +52,31 @@
     }
     &__wrapper {
         margin-top: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin: 0 auto;
+        border-top: 2px solid var(--action-red);
+        width: 980px;
+        background-color: #fff;
+        box-shadow: 0px 47px 47px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        .form__wrapper {
+            margin-top: 20px;
+            display: grid;
+            grid-template: auto auto / repeat(3, 280px);
+            justify-content: space-around;
+            align-items:flex-end;
+            gap: 30px 20px;
+        }
+        .form__politics {
+            grid-column: 1 / 4;
+            justify-self: center;
+            align-self: center;
+        }
     }
 }
