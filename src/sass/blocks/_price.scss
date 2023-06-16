@@ -8,16 +8,9 @@
         text-align: center;
         color: #1A142C;
     }
-    &__offer {
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-        
-    }
     &__item {
-        display: block;
-        width: 980px;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
     }
     &__name {
         padding: 5px 20px;
@@ -27,7 +20,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
-        color: #1A142C;
+        color: var(--main-dark);
         border: 1px solid rgba(0,0,0, .2);
     }
     &__cost {
@@ -38,7 +31,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
-        color: #ED584F;
+        color: var(--action-red);
         border: 1px solid rgba(0,0,0, .2);
         span {
             margin: 0 10px;
@@ -46,7 +39,10 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 30px;  
-            color: #1A142C;
+            color: var(--main-dark);
         }
+    }
+    &__wrapper {
+        margin-top: 30px;
     }
 }
