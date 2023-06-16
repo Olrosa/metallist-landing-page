@@ -25,7 +25,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        color: #1A142C;
+        color: var(--main-dark);
     }
     &__block {
         width: 100%;
@@ -72,7 +72,7 @@
             font-size: 14px;
             display: flex;
             align-items: center;
-            color: #1A142C;
+            color: var(--main-dark);
         }
     }
 }
