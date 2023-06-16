@@ -1,5 +1,22 @@
 .exp {
+    padding: 50px 0;
     background: #1A142C;
+    position: relative;
+    .background-image {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 48%;
+        height: 750px;
+        background-image: url('../img/exp_img2.png');
+        background-size: cover;
+        background-position: center left;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    &__block {
+        margin-left: 50%;
+    }
     &__img {
         display: block;
         margin-top: 20px;
@@ -37,12 +54,15 @@
 
 @media (max-width: 1140px) {
     .exp {
-        &__img {
+        padding-bottom: 100px;
+        .background-image {
+            top: 20px;
             height: 580px;
         }
         &__title {
             font-size: 36px;
             line-height: 42px;
+            margin-top: 40px;
         }
         &__descr {
             font-size: 18px;
@@ -54,13 +74,19 @@
 @media (max-width: 1024px) {
     .exp {
         padding-bottom: 100px;
+        .background-image {
+            position: relative;
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         &__wrapper {
             flex-direction: column;
         }
-        &__img {
-            height: 640px;
-        }
         &__block {
+            margin-left: 0;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -92,6 +118,19 @@
         }
         &__descr {
             width: 80%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .exp {
+        .background-image {
+            position: relative;
+            height: 500px;
+            width: 100%;
+            background-size: contain;
+            background-position: left;
+            background-repeat: no-repeat;
         }
     }
 }
