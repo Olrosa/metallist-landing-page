@@ -1,0 +1,52 @@
+.price {
+    padding: 110px 0 50px 0;
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+        color: #1A142C;
+    }
+    &__offer {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        
+    }
+    &__item {
+        display: block;
+        width: 980px;
+        margin: 0 auto;
+    }
+    &__name {
+        padding: 5px 20px;
+        display: inline-block;
+        width: 740px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1A142C;
+        border: 1px solid rgba(0,0,0, .2);
+    }
+    &__cost {
+        padding: 5px 20px;
+        display: inline-block;
+        width: 240px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ED584F;
+        border: 1px solid rgba(0,0,0, .2);
+        span {
+            margin: 0 10px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;  
+            color: #1A142C;
+        }
+    }
+}

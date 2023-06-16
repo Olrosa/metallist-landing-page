@@ -130,6 +130,7 @@
 
 @media (max-width: 600px) {
     .footer {
+        overflow: hidden;
         &__wrapper {
             position: relative;
             padding-bottom: 600px;
