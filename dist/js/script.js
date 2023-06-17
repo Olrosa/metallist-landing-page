@@ -36,8 +36,29 @@ window.addEventListener("DOMContentLoaded", function() {
             clickable: true,
             bulletClass: 'slider__point',
             bulletActiveClass: 'slider__point_active'
-          },
+        },
     });
+    const buildingsSlider = new Swiper('.buildings__slider', {
+        slidesPerView: 3,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 20,
+        pagination: {
+            el: '.slider__points',
+            type: 'bullets', 
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>';
+            },
+            clickable: true,
+            bulletClass: 'slider__point',
+            bulletActiveClass: 'slider__point_active'
+        },
+        navigation: {
+            nextEl: '.slider__arrow_next',
+            prevEl: '.slider__arrow_prev',
+          },
+    })
 });
 
 

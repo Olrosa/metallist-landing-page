@@ -8,12 +8,15 @@
         color: var(--main-dark);
     }
     .slider {
-        margin-top: 50px;
-        &__offer {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
+        .swiper-slide {
+            height: 200px;
         }
+        .swiper-wrapper {
+            height: 420px;
+        }
+        margin-top: 50px;
+        width: 100%;
+        overflow: hidden;
         &__item {
             position: relative;
             width: 380px;
@@ -34,6 +37,7 @@
             height: 56px;
             right: 0px;
             top: 129px;
+            min-width: 0;
             background: rgba(26, 20, 44, 0.15);
             backdrop-filter: blur(10px);
         }
@@ -52,8 +56,8 @@
             color: #FFFFFF;
         }
         &__points {
-            margin-top: 32px;
             display: flex;
+            width: fit-content;
             align-items: center;
             justify-content: center;
             gap: 32px;
@@ -67,12 +71,20 @@
                 border: 4px solid #ED584F;
             }
         }
+        &__navigation {
+            margin-top: 32px;
+            gap: 32px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+        }
         &__arrow {
             width: 6px;
                 height: 12px;
-                background: url('../img/svg/arrow.svg');
+                background: url('../img/svg/arrow.svg') center center / cover no-repeat;
                 cursor: pointer;
-            &_prev {
+            &_next {
                 transform: scale(-1, 1);
             }
         }
