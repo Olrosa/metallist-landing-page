@@ -80,3 +80,46 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .price {
+        &__name {
+            width: 592px;
+        }
+        &__cost {
+            width: 192px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .price {
+        .wrapper {
+            padding: 0;
+        }
+        &__title {
+            text-align: left;
+            font-size: 30px;
+            line-height: 40px;
+            margin-left: 18px;
+        }
+        &__item {
+            flex-direction: column;
+        }
+        &__name {
+            display: block;
+            padding: 15px 20px;
+            width: 100%;
+            background: rgba(26, 20, 44, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        &__cost {
+            padding: 20px 25px;
+            display: block;
+            width: 100%;
+            border: none;
+            span {
+                margin: 0 10px;
+            }
+        }
+    }
+}
