@@ -44,11 +44,29 @@ window.addEventListener("DOMContentLoaded", function() {
         },
     });
     const buildingsSlider = new Swiper('.buildings__slider', {
-        slidesPerView: 3,
-        grid: {
-            rows: 2,
+        slidesPerView:1,
+        breakpoints: {
+            600: {
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 20,
+            },
+            780: {
+                slidesPerView:2,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2,
+                },
+                spaceBetween: 20,
+            },
         },
-        spaceBetween: 20,
         pagination: {
             el: '.slider__points',
             type: 'bullets', 
