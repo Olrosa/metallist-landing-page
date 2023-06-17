@@ -39,6 +39,26 @@
                 line-height: 20px;
                 color: var(--main-light);
             }
+            &:focus {
+                outline:rgba(0, 0, 0, 0.1) solid 4px;
+            }
+            // &:invalid {
+            //     border-color: var(--action-red);
+            // }
+            // &:valid {
+            //     border-color: #29BB89;
+            // }
+        }
+        &-messagge {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 24px;
+            &-invalid {
+                color: var(--action-red);
+            }
+            &-valid {
+                color: #29BB89;
+            }
         }
     }
     &__politics {
