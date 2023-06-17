@@ -9,6 +9,13 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    position: relative;
+    &.modal-active {
+        overflow: hidden;
+    }
+}
+
 .wrapper {
     max-width: 1220px;
     padding: 0 20px;

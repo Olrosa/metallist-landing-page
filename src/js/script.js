@@ -45,6 +45,7 @@ window.addEventListener("DOMContentLoaded", function() {
     });
     const buildingsSlider = new Swiper('.buildings__slider', {
         slidesPerView:1,
+        spaceBetween: 20,
         breakpoints: {
             600: {
                 grid: {
@@ -81,7 +82,60 @@ window.addEventListener("DOMContentLoaded", function() {
             nextEl: '.slider__arrow_next',
             prevEl: '.slider__arrow_prev',
           },
-    })
+    });
+
+
+    new Swiper('.modal__slider', {
+        slidesPerView:1,
+        spaceBetween: 20,
+        pagination: {
+            el: '.slider__points',
+            type: 'bullets', 
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>';
+            },
+            clickable: true,
+            bulletClass: 'slider__point',
+            bulletActiveClass: 'slider__point_active'
+        },
+        navigation: {
+            nextEl: '.slider__arrow_next',
+            prevEl: '.slider__arrow_prev',
+          },
+    });
+
+    //Modals
+    const openModalButtons = document.querySelectorAll('.open-modal');
+    const overlay = document.querySelector('.overlay');
+    const body = document.querySelector('body');
+
+    function openModal(modalId) {
+        if(overlay) {
+            const modal = document.querySelector(`.modal[data-modal="${modalId}"]`);
+            if(modal) {
+                overlay.style.display = 'block';
+                modal.style.display = 'flex';
+                body.classList.add('modal-active');
+                currentModal = modal;
+            }
+        }
+    }
+    if(overlay) {
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.dataset.modal;
+                openModal(modalId);
+            });
+        });
+        overlay.addEventListener('click', event => {
+            if (event.target === overlay) {
+                overlay.style.display = 'none';
+                currentModal.style.display = 'none';
+                currentModal = null;
+                body.classList.remove('modal-active');
+            }
+        });
+    }
 });
 
 

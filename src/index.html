@@ -13,6 +13,39 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <div class="overlay">
+        <div class="modal" data-modal="1">
+            <div class="slider modal__slider swiper-container">
+                <div class="slider__offer swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/build_slide1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/build_slide1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/build_slide1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__navigation">
+                    <span class="slider__arrow slider__arrow_prev"></span>
+                    <div class="slider__points">
+                    </div>
+                    <span class="slider__arrow slider__arrow_next"></span>
+                </div>
+            </div>
+            <div class="modal__info">
+                <p class="modal__title">Склад общего назначения</p>
+                <p class="modal__address">г. Мытищи, Московская область</p>
+            </div>
+        </div>
+    </div>
     <section id="hero" class="hero">
         <div class="background-image"></div>
         <div class="white-stripe"></div>
@@ -317,7 +350,7 @@
             <div class="slider buildings__slider swiper-container">
                 <div class="slider__offer swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slider__item">
+                        <div class="slider__item open-modal" data-modal="1">
                             <div class="slider__back">
                                 <img src="img/svg/marker.svg" alt="" class="slider__icon">
                                 <p class="slider__title">Склад общего назначения</p>
@@ -326,7 +359,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slider__item">
+                        <div class="slider__item open-modal" data-modal="2">
                             <div class="slider__back">
                                 <img src="img/svg/marker.svg" alt="" class="slider__icon">
                                 <p class="slider__title">Склад общего назначения</p>
