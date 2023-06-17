@@ -26,7 +26,12 @@ window.addEventListener("DOMContentLoaded", function() {
     
     //Swiper initialization
     new Swiper('.services__slider', {
-        slidesPerView: 2,
+        slidesPerView: 1,
+        breakpoints: {
+            1024: {
+              slidesPerView: 2, // Если ширина экрана меньше 1024 пикселей, отображать только 1 слайд
+            },
+        },
         pagination: {
             el: '.slider__points',
             type: 'bullets', 
