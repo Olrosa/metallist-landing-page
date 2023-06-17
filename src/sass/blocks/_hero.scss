@@ -282,3 +282,15 @@
         }
     }
 }
+
+@media (max-width: 425px) {
+    .hero {
+        &__title {
+            width: 84%;
+        }
+    }
+}
+
+.phone-input::placeholder {
+    color: var(--main-dark);
+}
