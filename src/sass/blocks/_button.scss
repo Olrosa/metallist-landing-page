@@ -1,4 +1,5 @@
 .button {
+    transition: .2s all;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,4 +13,11 @@
     font-size: 14px;
     line-height: 20px;
     color: #F5F5F5;
+    &:hover {
+        background: #FE8574;
+    }
+    &:disabled {
+        background: #F5F5F5;
+        color: #D1D0D5;
+    }
 }
