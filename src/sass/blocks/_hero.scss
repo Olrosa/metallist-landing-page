@@ -73,7 +73,10 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 20px;
-            color: #ED584F
+            color: #ED584F;
+            &:hover {
+                color:#FE8574;
+            }
         }
     }
     &__links {
